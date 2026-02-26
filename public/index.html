@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>くれぴ | 冷蔵庫写真で献立が決まるLINE AIアシスタント</title>
+    <meta
+      name="description"
+      content="冷蔵庫をパシャッとするだけ。可愛いAI相棒「くれぴ」が、今ある食材で今日のごはんを提案します。"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="logo-wrap">
+        <span class="logo-mark">😆</span>
+        <span class="logo-text">くれぴ</span>
+      </div>
+      <a class="header-cta" href="#download">無料ではじめる</a>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-left">
+          <p class="eyebrow">最新AIテクノロジー × 親しみやすさ</p>
+          <h1>
+            「何作ろう…」のハァ〜😮‍💨を、<br />
+            「わぁっ！」の歓声😆に。
+          </h1>
+          <p class="hero-sub">
+            冷蔵庫をパシャッとするだけ。魔法のAIアシスタント「くれぴ」が、
+            今ある食材で最高の一品を提案します。
+          </p>
+          <div class="hero-actions">
+            <a class="cta-button wobble" href="#download">無料でくれぴを呼ぶ（DL）</a>
+            <span class="tiny-note">※LINEで今すぐ使えます</span>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="phone-mockup">
+            <div class="screen-top">
+              <span>くれぴとトーク中</span>
+              <span>21:17</span>
+            </div>
+            <div class="phone-screen">
+              <div class="float-face" aria-hidden="true">😆</div>
+              <div class="ingredient-icons" aria-hidden="true">
+                <span class="ing ing-cabbage">🥬</span>
+                <span class="ing ing-egg">🥚</span>
+                <span class="ing ing-carrot">🥕</span>
+              </div>
+              <div class="dish-icon" aria-hidden="true">🍳</div>
+              <p class="screen-caption">食材がポンッとごはんに変身中…</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pain section reveal-target">
+        <div class="pain-inner">
+          <h2>毎日17時にやってくる、献立のプレッシャー。</h2>
+          <p>冷蔵庫を開けても、中途半端な野菜と目が合うだけ…。</p>
+        </div>
+      </section>
+
+      <section class="solution-flash section reveal-target">
+        <div class="speech-bubble">それ、くれぴが全部解決するよ！✨</div>
+      </section>
+
+      <section class="bento section">
+        <h2>くれぴでできること</h2>
+        <div class="bento-grid">
+          <article class="card card-lg">
+            <h3>驚異のAI画像認識</h3>
+            <p>「整理されてなくてOK！」雑多な冷蔵庫から食材を瞬時に抽出。</p>
+            <div class="fake-gif" aria-hidden="true">
+              <div class="fridge-shot">🧺🥚🥬🥕🥛</div>
+              <div class="tags">
+                <span>にんじん</span>
+                <span>卵</span>
+                <span>牛乳</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <h3>救済エコ提案</h3>
+            <p>
+              「しおれた野菜も主役に🥬」賞味期限ギリギリの食材を見抜いて優先提案。
+            </p>
+          </article>
+          <article class="card">
+            <h3>絶対助かる3択レシピ</h3>
+            <div class="stack-cards">
+              <span>時短</span>
+              <span>ヘルシー</span>
+              <span>もったいない</span>
+            </div>
+          </article>
+          <article class="card card-sm">
+            <h3>元気が出る会話</h3>
+            <p>「わー！いいもの入ってるね〜😆」</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo section">
+        <h2>30秒で、くれぴ体験。</h2>
+        <p class="demo-sub">写真を送るだけで、今夜の献立が決まるよ🍳</p>
+        <div class="demo-chat">
+          <div class="chat-log" id="chatLog">
+            <div class="bubble user">冷蔵庫の写真を送ってみる</div>
+            <div class="bubble bot">
+              タップしてデモ開始してね😆
+            </div>
+          </div>
+          <div class="demo-controls">
+            <button id="demoButton" type="button">冷蔵庫の写真を送ってみる</button>
+            <p id="loadingCopy" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ugc section">
+        <h2>みんなの声</h2>
+        <div class="ugc-slider">
+          <div class="ugc-track">
+            <article class="ugc-card">
+              <p>
+                くれぴに怒られた（笑）賞味期限切れの豆腐見つかった！でも神レシピ教えてくれた😭
+                #くれぴ
+              </p>
+              <span>@mama_weekday</span>
+            </article>
+            <article class="ugc-card">
+              <p>
+                仕事帰りの電車で冷蔵庫の写真見せて、家着く前に献立決まるの最高すぎる。
+              </p>
+              <span>@yoji_cook</span>
+            </article>
+            <article class="ugc-card">
+              <p>野菜室の瀕死キャベツが、お好み焼きで完全復活。ありがとうくれぴ✨</p>
+              <span>@sachiko_kitchen</span>
+            </article>
+            <article class="ugc-card">
+              <p>
+                くれぴに怒られた（笑）賞味期限切れの豆腐見つかった！でも神レシピ教えてくれた😭
+                #くれぴ
+              </p>
+              <span>@mama_weekday</span>
+            </article>
+            <article class="ugc-card">
+              <p>
+                仕事帰りの電車で冷蔵庫の写真見せて、家着く前に献立決まるの最高すぎる。
+              </p>
+              <span>@yoji_cook</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="premium section">
+        <h2>くれぴをもっと賢い相棒にしませんか？</h2>
+        <ul>
+          <li>👑 アレルギー＆嫌いなもの完全ブロック</li>
+          <li>👑 1週間のまとめ買い＆献立完全自動化</li>
+          <li>👑 プロの隠し味アレンジ機能</li>
+        </ul>
+        <p>
+          まずは無料で使ってみてね！もっとくれぴと仲良くなりたくなったら、プレミアムで待ってるよ😉
+        </p>
+      </section>
+
+      <section class="closing section" id="download">
+        <div class="chef-visual" aria-hidden="true">🧑‍🍳🥄</div>
+        <h2>今日の夜ご飯、一緒に作ろっ！🍳</h2>
+        <div class="download-buttons">
+          <a href="#" class="store-btn">iOSでダウンロード</a>
+          <a href="#" class="store-btn secondary">Androidでダウンロード</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Kurepi</p>
+      <p id="nightMessage"></p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

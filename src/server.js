@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const config = require("./config");
 const {
   verifyLineSignature,
@@ -7,6 +8,9 @@ const {
 } = require("./lineService");
 
 const app = express();
+const publicDir = path.join(__dirname, "..", "public");
+
+app.use(express.static(publicDir));
 
 app.get("/health", (_req, res) => {
   res.status(200).json({ status: "ok" });
