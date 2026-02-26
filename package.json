@@ -1,0 +1,29 @@
+{
+  "name": "kurepi-line-bot",
+  "version": "1.0.0",
+  "description": "LINE recipe assistant bot backend for Kurepi",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "check": "node --check src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EZASI/kurepi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EZASI/kurepi/issues"
+  },
+  "homepage": "https://github.com/EZASI/kurepi#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
